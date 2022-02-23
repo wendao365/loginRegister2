@@ -121,3 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#发送邮件的参数
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.126.com'#126邮箱的SMTP服务器
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'zengzhiqi365@126.com'
+EMAIL_HOST_PASSWORD = 'XGZOKWKFXALHYHLP'#126邮箱的授权码
